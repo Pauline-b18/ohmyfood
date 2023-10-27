@@ -1,0 +1,353 @@
+/*-----------Mobile first-----------*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  width: 197px;
+  height: 36px;
+  margin: 4% auto 0 auto;
+}
+header p {
+  width: 100%;
+  margin: 5% 0 0 0;
+  padding: 4% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EAEAEA;
+  font-weight: 500;
+  position: relative;
+}
+header p i {
+  margin-right: 15px;
+  color: #353535;
+}
+header p::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to bottom, #cecece, #EAEAEA);
+}
+
+main {
+  width: 100%;
+}
+main .heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 60px;
+  background-color: #F6F6F6;
+}
+main .heading h1 {
+  width: 90%;
+  margin: 40px auto 20px auto;
+}
+main .heading p {
+  width: 90%;
+  margin: 0 auto 20px auto;
+  color: #353535;
+  font-size: 18px;
+  /*font-weight: 300;   transparence***/
+}
+main .heading button {
+  font-size: 16px;
+  width: 218px;
+  height: 50px;
+  margin: 15px auto 0 auto;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  border-width: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /*transition: background-color 0.5s; */
+}
+main .heading button:hover {
+  filter: brightness(1.1);
+}
+main .functioning {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .functioning h2 {
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 5%;
+  font-weight: 700;
+}
+main .functioning .step {
+  width: 85%;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+main .functioning .step .number {
+  width: 24px;
+  height: 24px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -30px;
+}
+main .functioning .step p {
+  font-weight: 500;
+  margin: 0 auto 0 17px;
+}
+main .functioning .step i {
+  width: 13px;
+  height: 17px;
+  color: #7E7E7E;
+  margin-left: 25px;
+}
+main .functioning .step .fa-store {
+  color: #9356DC;
+}
+main .restaurants {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F6F6F6;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+main .restaurants h2 {
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 5%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+main .restaurants .container_card {
+  position: relative;
+}
+main .restaurants .container_card button {
+  background-color: white;
+  border-width: 0px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+}
+main .restaurants .container_card button .fa-heart {
+  font-size: 22px;
+  height: 22px; /* epaisseur bord version payante*/
+  color: black;
+  background-color: white;
+}
+main .restaurants .container_card button:active .fa-heart { /* :checked */
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: white;
+}
+main .restaurants a {
+  width: 85%;
+  text-decoration: none;
+}
+main .restaurants .card {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+main .restaurants .card .image-container {
+  width: 100%;
+  height: 165px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+}
+main .restaurants .card .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 57px;
+}
+main .restaurants .card .image-container .new {
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+main .restaurants .card_content {
+  display: flex;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+main .restaurants .card_content .card_txt {
+  width: 75%;
+  color: black;
+  margin-left: 15px;
+}
+main .restaurants .card_content .card_txt h3 {
+  margin: 18px 0 -13px 0;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 20px 20px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+footer a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  margin: 10px 0 0 0;
+}
+footer a span i {
+  width: 15px;
+  margin-right: 15px;
+}
+
+/*-----------Media queries-----------*/
+/*--- Tablet ---*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  main .functioning {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .functioning h2 {
+    width: 100%;
+    padding-left: 15px;
+  }
+  main .functioning .step {
+    width: 28%;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 4% 4% 2% 0;
+  }
+  footer h2 {
+    order: 5;
+    margin-left: 20px;
+  }
+  footer a {
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  footer .footer_link_icon {
+    margin: 8px 31px 0 -19px;
+  }
+}
+/*--- Desktop ---*/
+@media (min-width: 1025px) {
+  header img {
+    margin: 2% auto 0 auto;
+  }
+  header p {
+    margin: 2% 0 0 0;
+    padding: 1% 0;
+  }
+  header p::before {
+    content: none;
+  }
+  main .heading {
+    padding-bottom: 40px;
+  }
+  main .heading h1 {
+    font-size: 40px;
+    margin: 30px auto 20px auto;
+  }
+  main .functioning {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
+  main .functioning h2 {
+    width: 100%;
+    padding-left: 5px;
+    margin-top: 40px;
+  }
+  main .functioning .step {
+    width: 30%;
+  }
+  main .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-top: 35px;
+  }
+  main .restaurants h2 {
+    width: 100%;
+    padding-left: 5px;
+    margin-top: 35px;
+  }
+  main .restaurants .container_card {
+    width: 46%;
+  }
+  main .restaurants .container_card button {
+    right: 3%;
+  }
+  main .restaurants .container_card .card {
+    width: 100%;
+    margin: 20px auto 33px auto;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 4% 4% 2% 0;
+  }
+  footer h2 {
+    order: 5;
+    margin-left: 20px;
+  }
+  footer a {
+    margin-left: 14px;
+    margin-right: 6px;
+  }
+  footer .footer_link_icon {
+    margin: 8px 39px 0 -20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
