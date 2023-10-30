@@ -1,0 +1,91 @@
+/*-----------Mobile first-----------*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header a {
+  margin-left: 6%; /* changer couleur hover */
+  text-decoration: none;
+  color: black;
+}
+header a i {
+  font-size: 22px;
+}
+header img {
+  width: 197px;
+  height: 36px;
+  margin: 4% 13% 3% 14%;
+}
+
+main img {
+  width: 100%;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 40px;
+  margin-top: -14%;
+  gap: 30px;
+}
+main section .title {
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2%;
+  margin-bottom: -40px;
+}
+main section .title h1 {
+  width: auto;
+  font-family: Shrikhand;
+  font-weight: 400;
+  font-size: 28px;
+  padding-right: 10px;
+}
+main section .title i {
+  font-size: 22px;
+  margin: 0 auto;
+}
+main section article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 92%;
+}
+main section article h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+}
+main section article h2::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-top: 5px;
+}
+main section article .card_content {
+  border: solid 1px green;
+  display: flex;
+}
+main section article .card_content .card_description {
+  border: solid 1px pink;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/*# sourceMappingURL=menu.css.map */

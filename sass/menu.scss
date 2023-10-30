@@ -1,0 +1,130 @@
+$light-gray : #F6F6F6; 
+$medium-gray : #EAEAEA;
+$dark-gray : #353535;
+$icon-gray : #7E7E7E;
+$icon-purple :#9356DC;
+$light-green: #99E2D0;
+$dark-green:#008766;
+$box-shadow : 0 4px 6px rgba(0, 0, 0, 0.2);
+$center : 0 auto;
+$width-content : 92%;
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+@mixin flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-column-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/*-----------Mobile first-----------*/
+
+* {
+    font-family: 'Roboto', sans-serif ;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-left: 6%; /* changer couleur hover */
+        text-decoration: none;
+        color: black;
+        i {
+            font-size: 22px;
+        }
+    }
+    
+    img {
+        width: 197px;
+        height: 36px;
+        margin: 4% 13% 3% 14%;
+    }
+}
+
+main {
+    
+    img {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: $light-gray;
+        border-radius: 40px;
+        margin-top: -14%;
+        gap: 30px;
+
+        .title {
+            width: $width-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 2%;
+            margin-bottom: -40px;
+
+            h1 {
+                width: auto;
+                font-family: Shrikhand;
+                font-weight: 400;
+                font-size: 28px;
+                padding-right: 10px;
+            }
+
+            i {
+                font-size: 22px;
+                margin: $center;
+            }
+        }
+
+        article {
+            @include flex-column-left;
+            width: $width-content;
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 16px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    border-bottom: 3px solid $light-green;
+                    width: 40px;
+                    margin-top: 5px;
+                }
+
+            }
+
+            .card_content {
+                border: solid 1px green;
+                display: flex;
+
+                .card_description {
+                    border: solid 1px pink;
+                    @include flex-column-left;
+                }
+            }
+        }
+    }
+}
