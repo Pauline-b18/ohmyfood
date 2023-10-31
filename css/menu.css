@@ -9,12 +9,14 @@ body {
 }
 
 header {
-  width: 100%;
+  position: relative;
   display: flex;
   align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
 }
 header a {
-  margin-left: 6%; /* changer couleur hover */
   text-decoration: none;
   color: black;
 }
@@ -24,7 +26,10 @@ header a i {
 header img {
   width: 197px;
   height: 36px;
-  margin: 4% 13% 3% 14%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 main img {
@@ -45,7 +50,7 @@ main section .title {
   width: 93%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 2%;
   margin-bottom: -38px;
 }
@@ -58,7 +63,7 @@ main section .title h1 {
 }
 main section .title i {
   font-size: 22px;
-  margin: 0 auto;
+  margin: auto 14px auto 0px;
 }
 main section article {
   display: flex;
@@ -92,6 +97,7 @@ main section article .card_content .card_description {
   flex-direction: column;
   text-align: left;
   padding: 10px;
+  width: auto;
 }
 main section article .card_content .card_description h3, main section article .card_content .card_description p {
   margin: 0 0 0 4px;
@@ -104,9 +110,9 @@ main section article .card_content .card_description p {
   font-size: 15px;
 }
 main section article .card_content > p {
-  border: solid 1px blueviolet;
+  margin: auto 12px 11px 0px;
   height: 18px;
-  font-weight: bold; /* a positionner */
+  font-weight: bold;
 }
 main section button {
   font-size: 16px;
@@ -147,5 +153,28 @@ footer a span i {
   width: 15px;
   margin-right: 15px;
 }
+
+/*-----------Media queries-----------*/
+/*--- Tablet ---*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 4% 4% 2% 0;
+  }
+  footer h2 {
+    order: 5;
+    margin-left: 20px;
+  }
+  footer a {
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  footer .footer_link_icon {
+    margin: 8px 31px 0 -19px;
+  }
+}
+/*--- Desktop ---*/
 
 /*# sourceMappingURL=menu.css.map */

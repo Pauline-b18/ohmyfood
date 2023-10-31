@@ -39,12 +39,14 @@ body {
 }
 
 header {
-    width: 100%;
+    position: relative;
     display: flex;
     align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: white;
 
     a {
-        margin-left: 6%; /* changer couleur hover */
         text-decoration: none;
         color: black;
         i {
@@ -55,7 +57,10 @@ header {
     img {
         width: 197px;
         height: 36px;
-        margin: 4% 13% 3% 14%;
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -80,7 +85,7 @@ main {
             width: $width-content;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
             padding-top: 2%;
             margin-bottom: -38px;
 
@@ -94,7 +99,7 @@ main {
 
             i {
                 font-size: 22px;
-                margin: $center;
+                margin: auto 14px auto 0px;
             }
         }
 
@@ -129,6 +134,7 @@ main {
                 .card_description {
                     @include flex-column-left;
                     padding: 10px;
+                    width: auto; 
                     
                     h3, p {
                         margin: 0 0 0 4px;
@@ -143,12 +149,12 @@ main {
                         font-size: 15px;
                     }
                 }
-                
+
                 > p {
-                    border: solid 1px blueviolet;
+                    margin: auto 12px 11px 0px;
                     height: 18px;
-                    font-weight: bold; /* a positionner */
-                }
+                    font-weight: bold; 
+                }   
             }
         }
 
@@ -197,4 +203,36 @@ footer {
             margin-right: 15px;
         }
     }
+}
+
+/*-----------Media queries-----------*/
+/*--- Tablet ---*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        padding: 4% 4% 2% 0;
+
+        h2 {
+            order: 5; 
+            margin-left: 20px;
+          
+        }
+
+        a {
+           margin-left: 2px;
+           margin-right: 10px;
+        }
+
+        .footer_link_icon {
+            margin: 8px 31px 0 -19px;
+        }
+    }
+}
+
+/*--- Desktop ---*/
+@media (min-width: 1025px) {
+
 }
