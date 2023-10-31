@@ -208,7 +208,29 @@ footer {
 /*-----------Media queries-----------*/
 /*--- Tablet ---*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+    header {
+        padding: 30px 27px;
+        margin-top: 0;
+    }
+
+    main {
+
+        .img_menu {
+            height: 293px;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                top: -200px;
+                z-index: -1;
+            }
+        }
+
+        section {
+            margin: -6% 6% 0 6%;
+        }
+    }
+
     footer {
         flex-direction: row;
         align-items: center;
@@ -234,5 +256,50 @@ footer {
 
 /*--- Desktop ---*/
 @media (min-width: 1025px) {
+
+    header {
+        padding: 30px 27px;
+        margin-top: 0;
+    }
+
+    main {
+
+        .img_menu {
+            height: 293px;
+            overflow: hidden;
+
+            img {
+               position: relative;
+                top: -228px;
+                z-index: -1; 
+            }
+        }
+
+        section {
+            margin: -4% 13% 0 13%;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        padding: 4% 4% 2% 0;
+
+        h2 {
+            order: 5; 
+            margin-left: 20px;
+          
+        }
+
+        a {
+           margin-left: 14px;
+           margin-right: 6px;
+        }
+
+        .footer_link_icon {
+            margin: 8px 39px 0 -20px;
+        }
+    }
 
 }
