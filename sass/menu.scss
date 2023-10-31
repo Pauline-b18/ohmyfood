@@ -7,7 +7,7 @@ $light-green: #99E2D0;
 $dark-green:#008766;
 $box-shadow : 0 4px 6px rgba(0, 0, 0, 0.2);
 $center : 0 auto;
-$width-content : 92%;
+$width-content : 93%;
 
 @mixin flex-column-center {
     display: flex;
@@ -71,8 +71,9 @@ main {
         align-items: center;
         position: relative;
         background-color: $light-gray;
-        border-radius: 40px;
+        border-radius: 40px 40px 0 0;
         margin-top: -14%;
+        padding-bottom: 40px;
         gap: 30px;
 
         .title {
@@ -81,7 +82,7 @@ main {
             align-items: center;
             justify-content: flex-start;
             padding-top: 2%;
-            margin-bottom: -40px;
+            margin-bottom: -38px;
 
             h1 {
                 width: auto;
@@ -100,11 +101,13 @@ main {
         article {
             @include flex-column-left;
             width: $width-content;
+            gap: 15px;
 
             h2 {
                 text-transform: uppercase;
                 font-weight: 400;
                 font-size: 16px;
+                margin-bottom: -2px;
 
                 &::after {
                     content: "";
@@ -117,14 +120,81 @@ main {
             }
 
             .card_content {
-                border: solid 1px green;
                 display: flex;
-
+                background-color: white;
+                border-radius: 15px;
+                justify-content: space-between;
+                box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.1);
+                
                 .card_description {
-                    border: solid 1px pink;
                     @include flex-column-left;
+                    padding: 10px;
+                    
+                    h3, p {
+                        margin: 0 0 0 4px;
+                    }
+
+                    h3 {
+                        padding: 2px 0px 4px 0;
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+                
+                > p {
+                    border: solid 1px blueviolet;
+                    height: 18px;
+                    font-weight: bold; /* a positionner */
                 }
             }
+        }
+
+        button {
+            font-size: 16px;
+            width: 218px;
+            height: 50px;
+            margin: 15px auto 0 auto;
+            border-radius: 25px;
+            background: linear-gradient(to bottom, #FF79DA, #9356DC);
+            color: white;
+            border-width: 0px;
+            box-shadow: $box-shadow;
+        /*    transition: background-color 0.8s; */
+
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px 20px;
+
+
+    h2 {
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    a {
+        width: auto;
+        text-decoration: none;
+        color: white;
+        margin: 10px 0 0 0;
+
+        span i {
+            width: 15px;
+            margin-right: 15px;
         }
     }
 }
