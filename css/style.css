@@ -1,3 +1,29 @@
+/*-----Animations--------*/
+@keyframes loaderFadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes icon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-circle-rotation {
+  to {
+    transform: rotate(-360deg);
+  }
+}
 /*-----------Mobile first-----------*/
 * {
   font-family: "Roboto", sans-serif;
@@ -6,6 +32,39 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loaderFadeOut 3s ease-in-out forwards; /* conserve effet final */
+  z-index: 9999;
+}
+.loader .loader-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .loader-icon .circle {
+  width: 100px;
+  height: 100px;
+  border-top: 4px solid #008766;
+  border-radius: 50%;
+  position: absolute;
+  animation: loading-circle-rotation 3s linear infinite;
+}
+.loader .loader-icon i {
+  font-size: 60px;
+  color: #99E2D0;
+  animation: icon 2s linear infinite;
+  position: relative;
 }
 
 header {
