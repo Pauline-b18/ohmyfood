@@ -86,8 +86,8 @@ body {
         justify-content: center;
 
         .circle {
-            width: 100px;
-            height: 100px; 
+            width: 200px;
+            height: 200px; 
             border-top: 4px solid $dark-green;
             border-radius: 50%;
             position: absolute;
@@ -95,7 +95,7 @@ body {
         }
 
         i {
-            font-size: 60px; 
+            font-size: 120px; 
             color: $light-green;
             animation: icon 2s linear infinite;
             position: relative;
@@ -255,9 +255,7 @@ main {
         .container_card {
             position: relative;
 
-            button {
-                background-color: white;
-                border-width: 0px;
+            .heart-button {
                 height: auto;
                 margin: auto;
                 position: absolute;
@@ -265,19 +263,29 @@ main {
                 right: 10%;
                 cursor: pointer;
 
-                .fa-heart {
+                .fa-regular {
                     font-size: 22px;
                     height: 22px; 
                     color: black;
-                    background-color: transparent;
-                    transition: color 0.3s; /** background a ajouter */
-
-                    &:active { /* :checked */
-                        background: linear-gradient(#9356DC, #FF79DA); 
-                        color: white;
-                    }
+                    display:block;
                 }
 
+                .fa-solid  {
+                    font-size: 22px;
+                    height: 22px; 
+                    background-image: linear-gradient(#9356DC, #FF79DA);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    display: none;
+                }
+
+                &:active .fa-regular.fa-heart {
+                    display: none; 
+                }
+                
+                &:active .fa-solid.fa-heart {
+                    display: block; 
+                }
                 
             }
         }
