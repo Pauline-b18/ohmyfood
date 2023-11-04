@@ -121,19 +121,37 @@ main {
                 font-size: 28px;
                 padding-right: 10px;
             }
-            /* TEST */
-            i {
-                font-size: 22px;
-                margin: auto 14px auto 0px;
-                color: black;
 
-                &:active { /* :checked */
-                    background: linear-gradient(#9356DC, #FF79DA); 
-                    color: white;
+            .heart-button {
+                margin-right: 20px;
+                height: auto;
+                cursor: pointer;
+
+                .fa-regular {
+                    font-size: 22px;
+                    height: 22px; 
+                    color: black;
+                    display:block;
+                }
+
+                .fa-solid  {
+                    font-size: 22px;
+                    height: 22px; 
+                    background-image: linear-gradient(#9356DC, #FF79DA);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    display: none;
+                }
+
+                &:active .fa-regular.fa-heart {
+                    display: none; 
+                }
+                
+                &:active .fa-solid.fa-heart {
+                    display: block; 
                 }
             }
-            /* FIN TEST */
-
         }
 
         article {
@@ -316,6 +334,17 @@ footer {
 
     main {
 
+        section {
+
+            .title {
+                justify-content: center;
+                gap: 15px;
+
+                .heart-button {
+                    margin-right: 0px;
+                }
+            }
+        }
         .img_menu {
             height: 293px;
             @include img-menu-center;
