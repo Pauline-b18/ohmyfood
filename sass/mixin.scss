@@ -1,0 +1,29 @@
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+@mixin align-title {
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 5%;
+}
+
+@mixin flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-column-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@mixin img-menu-center {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}

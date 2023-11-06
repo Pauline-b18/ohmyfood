@@ -211,10 +211,6 @@ main .restaurants .container_card .heart-button {
   bottom: 17%;
   right: 10%;
   cursor: pointer;
-  /*button {
-      background-color: transparent;
-      border: 0px;
-  }*/
 }
 main .restaurants .container_card .heart-button .fa-regular {
   font-size: 22px;
