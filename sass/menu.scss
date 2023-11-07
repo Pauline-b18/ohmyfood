@@ -148,16 +148,21 @@ main {
                 display: flex;
                 background-color: white;
                 border-radius: 15px;
-                justify-content: space-between;
+                justify-content: space-between;  /**/
                 box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
                 
                 .card_description {
-                    @include flex-column-left;
+                    @include flex-column-left; 
+                    overflow: hidden;
                     padding: 10px;
-                    width: auto; 
+                    width: 85%; 
                     
                     h3, p {
-                        margin: 0 0 0 4px;
+                    margin: 0 0 0 4px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
                     }
 
                     h3 {
@@ -166,17 +171,45 @@ main {
                     }
 
                     p {
+                        width: auto;
                         font-size: 15px;
                     }
                 }
 
-                > p {
-                    margin: auto 12px 11px 0px;
-                    height: 18px;
-                    font-weight: bold; 
+                    > p {
+                        margin: auto 12px 11px 0px;
+                        height: 18px;
+                        font-weight: bold; 
+                    }
+
+                    .check-icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        background-color: $light-green;
+                        border-radius: 0 15px 15px 0px;
+                        margin-right: -63px;
+                        transition: margin-right 0.3s; 
+
+                        i {
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+
+                &:hover .check-icon {
+                    margin-right: 0;
+
+           /*        h3, p {
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    } */
                 }
                 
             }
+
             .card_content-entrees {
                 animation: fadeIn 0.7s ease-in-out;
                 animation-fill-mode: both;

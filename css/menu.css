@@ -131,30 +131,58 @@ main section article .card_content {
   display: flex;
   background-color: white;
   border-radius: 15px;
-  justify-content: space-between;
+  justify-content: space-between; /**/
   box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 main section article .card_content .card_description {
   display: flex;
   flex-direction: column;
   text-align: left;
+  overflow: hidden;
   padding: 10px;
-  width: auto;
+  width: 85%;
 }
 main section article .card_content .card_description h3, main section article .card_content .card_description p {
   margin: 0 0 0 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 main section article .card_content .card_description h3 {
   padding: 2px 0px 4px 0;
   font-size: 18px;
 }
 main section article .card_content .card_description p {
+  width: auto;
   font-size: 15px;
 }
 main section article .card_content > p {
   margin: auto 12px 11px 0px;
   height: 18px;
   font-weight: bold;
+}
+main section article .card_content .check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0px;
+  margin-right: -63px;
+  transition: margin-right 0.3s;
+}
+main section article .card_content .check-icon i {
+  color: white;
+  font-size: 25px;
+}
+main section article .card_content:hover .check-icon {
+  margin-right: 0;
+  /*        h3, p {
+               text-overflow: ellipsis;
+               white-space: nowrap;
+               overflow: hidden;
+           } */
 }
 main section article .card_content-entrees {
   animation: fadeIn 0.7s ease-in-out;
