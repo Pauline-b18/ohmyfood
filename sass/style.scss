@@ -228,97 +228,107 @@ main {
         }
 
         .container_card {
+
+            a {
+                width: 85%;
+                text-decoration: none;
+            }
+
+            .card {
+                width: 90%;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                position: relative;
+            
+                .image-container {
+                    width: 100%;
+                    height: 165px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 15px 15px 0 0 ;
+                    
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 15px 15px 0 0 ;
+                        margin-bottom: 58px;
+                    }
+        
+                    .new {
+                        font-size: 14px;
+                        position: absolute;
+                        top: 0px;
+                        right: 10px;
+                        background-color: $light-green;
+                        color: $dark-green;
+                        padding: 5px 10px;
+                        border-radius: 2px;
+                        font-weight: 500;
+                    }
+                }
+
+            }
+
+            .card_content {
+                display: flex;
+                background-color: white;
+                border-radius: 0 0 15px 15px;
+                margin-top: -15px;
+
+                .card_txt {
+                    width: 75%;
+                    color: black;
+                    margin-left: 15px;
+                    h3 {
+                        margin: 18px 0 -13px 0;
+                    }
+                }
+            }
+        }
+
+        .container_card {
             position: relative;
 
+            .hidden {
+                display: none;
+            }
+            
             .heart-button {
+                cursor: pointer;
                 position: absolute;
                 bottom: 17%;
                 right: 10%;
-                cursor: pointer;
 
-                .fa-regular {
+                i.fa-regular.fa-heart {
                     font-size: 22px;
                     height: 22px; 
                     color: black;
-                    display:block;
+                    display: block;
                 }
-
-                .fa-solid  {
+                i.fa-solid.fa-heart {
+                    display: none;
                     font-size: 22px;
                     height: 22px; 
                     background-image: linear-gradient(#9356DC, #FF79DA);
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
+                }
+            }    
+            
+            #heart-checkbox-1:checked + .heart-button,
+            #heart-checkbox-2:checked + .heart-button,
+            #heart-checkbox-3:checked + .heart-button,
+            #heart-checkbox-4:checked + .heart-button {
+                i.fa-regular.fa-heart {
                     display: none;
                 }
-
-                &:active .fa-regular.fa-heart {
-                    display: none; 
-                }
-                
-                &:active .fa-solid.fa-heart {
-                    display: block; 
-                }
-            }
-        }
-
-        a {
-            width: 85%;
-            text-decoration: none;
-        }
-
-        .card {
-            width: 90%;
-            margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            position: relative;
-           
-            .image-container {
-                width: 100%;
-                height: 165px;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 15px 15px 0 0 ;
-                
-                img {
-                    max-width: 100%;
-                    height: auto;
-                    border-radius: 15px 15px 0 0 ;
-                    margin-bottom: 58px;
-                }
-    
-                .new {
-                    font-size: 14px;
-                    position: absolute;
-                    top: 0px;
-                    right: 10px;
-                    background-color: $light-green;
-                    color: $dark-green;
-                    padding: 5px 10px;
-                    border-radius: 2px;
-                    font-weight: 500;
-                }
-            }
-
-        }
-
-        .card_content {
-            display: flex;
-            background-color: white;
-            border-radius: 0 0 15px 15px;
-            margin-top: -15px;
-
-            .card_txt {
-                width: 75%;
-                color: black;
-                margin-left: 15px;
-                h3 {
-                    margin: 18px 0 -13px 0;
+                i.fa-solid.fa-heart {
+                    display: block;
                 }
             }
         }

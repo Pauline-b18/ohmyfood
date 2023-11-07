@@ -203,41 +203,11 @@ main .restaurants h2 {
   margin-bottom: 5px;
   font-weight: 700;
 }
-main .restaurants .container_card {
-  position: relative;
-}
-main .restaurants .container_card .heart-button {
-  position: absolute;
-  bottom: 17%;
-  right: 10%;
-  cursor: pointer;
-}
-main .restaurants .container_card .heart-button .fa-regular {
-  font-size: 22px;
-  height: 22px;
-  color: black;
-  display: block;
-}
-main .restaurants .container_card .heart-button .fa-solid {
-  font-size: 22px;
-  height: 22px;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: none;
-}
-main .restaurants .container_card .heart-button:active .fa-regular.fa-heart {
-  display: none;
-}
-main .restaurants .container_card .heart-button:active .fa-solid.fa-heart {
-  display: block;
-}
-main .restaurants a {
+main .restaurants .container_card a {
   width: 85%;
   text-decoration: none;
 }
-main .restaurants .card {
+main .restaurants .container_card .card {
   width: 90%;
   margin: 20px auto;
   display: flex;
@@ -245,7 +215,7 @@ main .restaurants .card {
   text-align: left;
   position: relative;
 }
-main .restaurants .card .image-container {
+main .restaurants .container_card .card .image-container {
   width: 100%;
   height: 165px;
   overflow: hidden;
@@ -254,13 +224,13 @@ main .restaurants .card .image-container {
   justify-content: center;
   border-radius: 15px 15px 0 0;
 }
-main .restaurants .card .image-container img {
+main .restaurants .container_card .card .image-container img {
   max-width: 100%;
   height: auto;
   border-radius: 15px 15px 0 0;
   margin-bottom: 58px;
 }
-main .restaurants .card .image-container .new {
+main .restaurants .container_card .card .image-container .new {
   font-size: 14px;
   position: absolute;
   top: 0px;
@@ -271,19 +241,58 @@ main .restaurants .card .image-container .new {
   border-radius: 2px;
   font-weight: 500;
 }
-main .restaurants .card_content {
+main .restaurants .container_card .card_content {
   display: flex;
   background-color: white;
   border-radius: 0 0 15px 15px;
   margin-top: -15px;
 }
-main .restaurants .card_content .card_txt {
+main .restaurants .container_card .card_content .card_txt {
   width: 75%;
   color: black;
   margin-left: 15px;
 }
-main .restaurants .card_content .card_txt h3 {
+main .restaurants .container_card .card_content .card_txt h3 {
   margin: 18px 0 -13px 0;
+}
+main .restaurants .container_card {
+  position: relative;
+}
+main .restaurants .container_card .hidden {
+  display: none;
+}
+main .restaurants .container_card .heart-button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 17%;
+  right: 10%;
+}
+main .restaurants .container_card .heart-button i.fa-regular.fa-heart {
+  font-size: 22px;
+  height: 22px;
+  color: black;
+  display: block;
+}
+main .restaurants .container_card .heart-button i.fa-solid.fa-heart {
+  display: none;
+  font-size: 22px;
+  height: 22px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main .restaurants .container_card #heart-checkbox-1:checked + .heart-button i.fa-regular.fa-heart,
+main .restaurants .container_card #heart-checkbox-2:checked + .heart-button i.fa-regular.fa-heart,
+main .restaurants .container_card #heart-checkbox-3:checked + .heart-button i.fa-regular.fa-heart,
+main .restaurants .container_card #heart-checkbox-4:checked + .heart-button i.fa-regular.fa-heart {
+  display: none;
+}
+main .restaurants .container_card #heart-checkbox-1:checked + .heart-button i.fa-solid.fa-heart,
+main .restaurants .container_card #heart-checkbox-2:checked + .heart-button i.fa-solid.fa-heart,
+main .restaurants .container_card #heart-checkbox-3:checked + .heart-button i.fa-solid.fa-heart,
+main .restaurants .container_card #heart-checkbox-4:checked + .heart-button i.fa-solid.fa-heart {
+  display: block;
 }
 
 footer {

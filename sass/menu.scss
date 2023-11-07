@@ -83,42 +83,38 @@ main {
             padding-top: 2%;
             margin-bottom: -38px;
 
-            h1 {
-                width: auto;
-                font-family: Shrikhand;
-                font-weight: 400;
-                font-size: 28px;
-                padding-right: 10px;
+            .hidden {
+                display: none;
             }
-
+            
             .heart-button {
-                margin-right: 20px;
-                height: auto;
                 cursor: pointer;
-
-                .fa-regular {
+            }
+            
+            .heart-button {
+                i.fa-regular.fa-heart {
                     font-size: 22px;
                     height: 22px; 
                     color: black;
-                    display:block;
+                    display: block;
                 }
-
-                .fa-solid  {
+                i.fa-solid.fa-heart {
+                    display: none;
                     font-size: 22px;
                     height: 22px; 
                     background-image: linear-gradient(#9356DC, #FF79DA);
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
+                }
+            }
+            
+            #heart-checkbox:checked + .heart-button {
+                i.fa-regular.fa-heart {
                     display: none;
                 }
-
-                &:active .fa-regular.fa-heart {
-                    display: none; 
-                }
-                
-                &:active .fa-solid.fa-heart {
-                    display: block; 
+                i.fa-solid.fa-heart {
+                    display: block;
                 }
             }
         }
@@ -148,10 +144,39 @@ main {
                 display: flex;
                 background-color: white;
                 border-radius: 15px;
-                justify-content: space-between;  /**/
+                justify-content: space-between; 
+                align-items: flex-end;
                 box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.1);
                 overflow: hidden;
                 
+                .price-animation {
+                    height: 66px;
+                    display: flex;
+                    
+                    > p {
+                        margin: auto 12px 11px 0px;
+                        height: 18px;
+                        font-weight: bold; 
+                    }
+
+                    .check-icon {
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        background-color: $light-green;
+                        border-radius: 0 15px 15px 0px;
+                        margin-right: -63px;
+                        transition: margin-right 0.3s; 
+
+                        i {
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
                 .card_description {
                     @include flex-column-left; 
                     overflow: hidden;
@@ -176,36 +201,9 @@ main {
                     }
                 }
 
-                    > p {
-                        margin: auto 12px 11px 0px;
-                        height: 18px;
-                        font-weight: bold; 
-                    }
-
-                    .check-icon {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 60px;
-                        background-color: $light-green;
-                        border-radius: 0 15px 15px 0px;
-                        margin-right: -63px;
-                        transition: margin-right 0.3s; 
-
-                        i {
-                            color: white;
-                            font-size: 25px;
-                        }
-                    }
 
                 &:hover .check-icon {
                     margin-right: 0;
-
-           /*        h3, p {
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    } */
                 }
                 
             }
