@@ -121,7 +121,6 @@ main .heading p {
   margin: 0 auto 20px auto;
   color: #353535;
   font-size: 18px;
-  /*font-weight: 300;   transparence***/
 }
 main .heading button {
   font-size: 16px;
@@ -202,6 +201,9 @@ main .restaurants h2 {
   padding-left: 5%;
   margin-bottom: 5px;
   font-weight: 700;
+}
+main .restaurants .container_card {
+  margin-bottom: -17px;
 }
 main .restaurants .container_card a {
   width: 85%;
@@ -393,7 +395,7 @@ footer a span i {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 10% 15px 10%;
     margin-top: 35px;
   }
   main .restaurants h2 {
@@ -423,7 +425,7 @@ footer a span i {
   }
   footer h2 {
     order: 5;
-    margin-left: 20px;
+    margin-left: 80px;
   }
   footer a {
     margin-left: 14px;

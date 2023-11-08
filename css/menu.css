@@ -74,10 +74,16 @@ main section .title {
   padding-top: 2%;
   margin-bottom: -38px;
 }
+main section .title h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 28px;
+}
 main section .title .hidden {
   display: none;
 }
 main section .title .heart-button {
+  margin-right: 16px;
   cursor: pointer;
 }
 main section .title .heart-button i.fa-regular.fa-heart {
@@ -280,12 +286,18 @@ footer a span i {
     padding: 30px 27px;
     margin-top: 0;
   }
+  main section {
+    margin: -4% 13% 0 13%;
+  }
   main section .title {
     justify-content: center;
     gap: 15px;
   }
   main section .title .heart-button {
     margin-right: 0px;
+  }
+  main section article {
+    width: 68%;
   }
   main .img_menu {
     height: 293px;
@@ -299,9 +311,6 @@ footer a span i {
     width: 100%;
     height: auto;
   }
-  main section {
-    margin: -4% 13% 0 13%;
-  }
   footer {
     flex-direction: row;
     align-items: center;
@@ -310,7 +319,7 @@ footer a span i {
   }
   footer h2 {
     order: 5;
-    margin-left: 20px;
+    margin-left: 80px;
   }
   footer a {
     margin-left: 14px;
