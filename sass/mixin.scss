@@ -28,6 +28,23 @@
     align-items: center;
 }
 
+@mixin gradient-button {
+    font-size: 16px;
+    width: 218px;
+    height: 50px;
+    margin: 15px auto 0 auto;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    color: white;
+    border-width: 0px;
+    box-shadow: $box-shadow;
+    transition: filter 0.5s, box-shadow 0.5s;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
 @mixin heart-button {
     i.fa-regular.fa-heart {
         font-size: 22px;
