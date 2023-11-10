@@ -1,0 +1,334 @@
+/*-------Animations----------*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*-----------Mobile first-----------*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a i {
+  font-size: 22px;
+}
+header img {
+  width: 197px;
+  height: 36px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .img_menu {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 430px;
+}
+main .img_menu img {
+  position: relative;
+  top: -26%;
+  width: 100%;
+  height: auto;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -247px;
+  padding-bottom: 40px;
+  gap: 30px;
+}
+main section .title {
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2%;
+  margin-bottom: -38px;
+}
+main section .title h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 28px;
+}
+main section .title .hidden {
+  display: none;
+}
+main section .title .heart-button {
+  margin-right: 16px;
+  cursor: pointer;
+}
+main section .title .heart-button i.fa-regular.fa-heart {
+  font-size: 22px;
+  height: 22px;
+  color: black;
+  display: block;
+}
+main section .title .heart-button i.fa-solid.fa-heart {
+  display: none;
+  font-size: 22px;
+  height: 22px;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+main section .title #heart-checkbox:checked + .heart-button i.fa-regular.fa-heart {
+  display: none;
+}
+main section .title #heart-checkbox:checked + .heart-button i.fa-solid.fa-heart {
+  display: block;
+}
+main section article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 93%;
+  gap: 15px;
+}
+main section article h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: -2px;
+}
+main section article h2::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-top: 5px;
+}
+main section article .card_content {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 3px 4px 12px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+main section article .card_content .price-animation {
+  height: 66px;
+  display: flex;
+}
+main section article .card_content .price-animation > p {
+  margin: auto 12px 11px 0px;
+  height: 18px;
+  font-weight: bold;
+}
+main section article .card_content .price-animation .check-icon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0px;
+  margin-right: -63px;
+  transition: margin-right 0.3s;
+}
+main section article .card_content .price-animation .check-icon i {
+  color: white;
+  font-size: 25px;
+}
+main section article .card_content .card_description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+  padding: 10px;
+  width: 85%;
+}
+main section article .card_content .card_description h3, main section article .card_content .card_description p {
+  margin: 0 0 0 4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+main section article .card_content .card_description h3 {
+  padding: 2px 0px 4px 0;
+  font-size: 18px;
+}
+main section article .card_content .card_description p {
+  width: auto;
+  font-size: 15px;
+}
+main section article .card_content:hover .check-icon {
+  margin-right: 0;
+}
+main section article .card_content-entrees {
+  animation: fadeIn 0.7s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+}
+main section article .card_content-plats {
+  animation: fadeIn 0.7s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+main section article .card_content-desserts {
+  animation: fadeIn 0.7s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+}
+main section button {
+  font-size: 16px;
+  width: 218px;
+  height: 50px;
+  margin: 15px auto 0 auto;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  border-width: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: filter 0.5s, box-shadow 0.5s;
+}
+main section button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 20px 20px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+footer a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  margin: 10px 0 0 0;
+}
+footer a span i {
+  width: 15px;
+  margin-right: 15px;
+}
+
+/*-----------Media queries-----------*/
+/*--- Tablet ---*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 30px 27px;
+    margin-top: 0;
+  }
+  main .img_menu {
+    height: 293px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  main .img_menu img {
+    position: relative;
+    top: -20%;
+    width: 100%;
+    height: auto;
+  }
+  main section {
+    margin: -6% 6% 0 6%;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 4% 4% 2% 0;
+  }
+  footer h2 {
+    order: 5;
+    margin-left: 20px;
+  }
+  footer a {
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  footer .footer_link_icon {
+    margin: 8px 31px 0 -19px;
+  }
+}
+/*--- Desktop ---*/
+@media (min-width: 1025px) {
+  header {
+    padding: 30px 27px;
+    margin-top: 0;
+  }
+  main section {
+    margin: -4% 13% 0 13%;
+  }
+  main section .title {
+    justify-content: center;
+    gap: 15px;
+  }
+  main section .title .heart-button {
+    margin-right: 0px;
+  }
+  main section article {
+    width: 68%;
+  }
+  main .img_menu {
+    height: 293px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  main .img_menu img {
+    position: relative;
+    top: -29%;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding: 4% 4% 2% 0;
+  }
+  footer h2 {
+    order: 5;
+    margin-left: 80px;
+  }
+  footer a {
+    margin-left: 14px;
+    margin-right: 6px;
+  }
+  footer .footer_link_icon {
+    margin: 8px 39px 0 -20px;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

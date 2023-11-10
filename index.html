@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader-icon">
+            <div class="circle"></div> 
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+    </div>
     <header><!--logo + localisation-->
             <img src="Images_et_textes_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
             <p><i class="fa-solid fa-location-dot"></i>Paris, Belleville</p>          
@@ -58,7 +64,10 @@
                         </div>    
                     </article>
                 </a>
-                <button><i class="fa-regular fa-heart"></i></button> <!--revoir placement avec balise <a>-->
+                <input type="checkbox" id="heart-checkbox-1" class="hidden">
+                <label for="heart-checkbox-1" class="heart-button">
+                    <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                </label>
             </div>
             <div class="container_card">        
                 <a href="./restaurants/menu_la_note_enchantee.html">
@@ -75,7 +84,10 @@
                         </div>    
                     </article>
                 </a>
-                <button><i class="fa-regular fa-heart"></i></button> <!--revoir placement avec balise <a>-->
+                <input type="checkbox" id="heart-checkbox-2" class="hidden">
+                <label for="heart-checkbox-2" class="heart-button">
+                    <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                </label>
             </div>
             <div class="container_card">        
                 <a href="./restaurants/menu_a_la_francaise.html">
@@ -91,7 +103,10 @@
                         </div>    
                     </article>
                 </a>
-                <button><i class="fa-regular fa-heart"></i></button> <!--revoir placement avec balise <a>-->
+                <input type="checkbox" id="heart-checkbox-3" class="hidden">
+                <label for="heart-checkbox-3" class="heart-button">
+                    <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                </label>
             </div>
             <div class="container_card">        
                 <a href="./restaurants/menu_le_delice_des_sens.html">
@@ -107,7 +122,10 @@
                         </div>    
                     </article>
                 </a>
-                <button><i class="fa-regular fa-heart"></i></button> <!--revoir placement avec balise <a>-->        
+                <input type="checkbox" id="heart-checkbox-4" class="hidden">
+                <label for="heart-checkbox-4" class="heart-button">
+                    <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+                </label>
             </div>
         </section>
     </main>
@@ -116,7 +134,7 @@
         <a href="#" class="footer_link_icon"><span><i class="fa-solid fa-utensils"></i>Proposer un restaurant</span></a>
         <a href="#" class="footer_link_icon"><span><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</span></a>
         <a href="#"><span>Mentions légales</span></a>
-        <a href="#"><span>Contact</span></a>
+        <a href="mailto:pauline.borges18@gmail.com"><span>Contact</span></a>
     </footer> 
 </body>
 </html>  
