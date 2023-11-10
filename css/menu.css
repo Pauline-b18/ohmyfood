@@ -297,6 +297,12 @@ footer a span i {
   main section .title .heart-button {
     margin-right: 0px;
   }
+  main section .title #heart-checkbox:hover + .heart-button i.fa-regular.fa-heart {
+    display: none;
+  }
+  main section .title #heart-checkbox:hover + .heart-button i.fa-solid.fa-heart {
+    display: block;
+  }
   main section article {
     width: 68%;
   }

@@ -282,6 +282,15 @@ footer {
                 .heart-button {
                     margin-right: 0px;
                 }
+
+                #heart-checkbox:hover + .heart-button {
+                    i.fa-regular.fa-heart {
+                        display: none;
+                    }
+                    i.fa-solid.fa-heart {
+                        display: block;
+                    }
+                }
             }
 
             article {

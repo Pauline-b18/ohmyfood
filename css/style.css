@@ -411,6 +411,18 @@ footer a span i {
     right: 3%;
     bottom: 21%;
   }
+  main .restaurants .container_card #heart-checkbox-1:hover + .heart-button i.fa-regular.fa-heart,
+  main .restaurants .container_card #heart-checkbox-2:hover + .heart-button i.fa-regular.fa-heart,
+  main .restaurants .container_card #heart-checkbox-3:hover + .heart-button i.fa-regular.fa-heart,
+  main .restaurants .container_card #heart-checkbox-4:hover + .heart-button i.fa-regular.fa-heart {
+    display: none;
+  }
+  main .restaurants .container_card #heart-checkbox-1:hover + .heart-button i.fa-solid.fa-heart,
+  main .restaurants .container_card #heart-checkbox-2:hover + .heart-button i.fa-solid.fa-heart,
+  main .restaurants .container_card #heart-checkbox-3:hover + .heart-button i.fa-solid.fa-heart,
+  main .restaurants .container_card #heart-checkbox-4:hover + .heart-button i.fa-solid.fa-heart {
+    display: block;
+  }
   main .restaurants .container_card .card {
     width: 100%;
     margin: 20px auto 33px auto;

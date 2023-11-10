@@ -401,6 +401,18 @@ footer {
                     bottom: 21%;
                 }
 
+                #heart-checkbox-1:hover + .heart-button,
+                #heart-checkbox-2:hover + .heart-button,
+                #heart-checkbox-3:hover + .heart-button,
+                #heart-checkbox-4:hover + .heart-button {
+                    i.fa-regular.fa-heart {
+                        display: none;
+                    }
+                    i.fa-solid.fa-heart {
+                        display: block;
+                    }
+                }  
+
                 .card {
                     width: 100%;
                     margin: 20px auto 33px auto;
@@ -419,3 +431,6 @@ footer {
         @include footer-desktop;
     }
 }
+
+
+  
