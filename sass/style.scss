@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loaderFadeOut 3s ease-in-out forwards; /* conserve effet final */
+    animation: loaderFadeOut 3s ease-in-out forwards; 
     z-index: 9999;
 
     .loader-icon {
