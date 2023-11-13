@@ -145,6 +145,12 @@ main section article .card_content .price-animation > p {
   height: 18px;
   font-weight: bold;
 }
+main section article .card_content .price-animation .check-input {
+  display: none;
+}
+main section article .card_content .price-animation .check-label {
+  cursor: pointer;
+}
 main section article .card_content .price-animation .check-icon {
   height: 100%;
   display: flex;
@@ -155,8 +161,6 @@ main section article .card_content .price-animation .check-icon {
   border-radius: 0 15px 15px 0px;
   margin-right: -63px;
   transition: margin-right 0.3s;
-}
-main section article .card_content .price-animation .check-icon i {
   color: white;
   font-size: 25px;
 }
@@ -183,6 +187,18 @@ main section article .card_content .card_description p {
   font-size: 15px;
 }
 main section article .card_content:hover .check-icon {
+  margin-right: 0;
+}
+main section article .card_content #check1:checked + .check-label .check-icon,
+main section article .card_content #check2:checked + .check-label .check-icon,
+main section article .card_content #check3:checked + .check-label .check-icon,
+main section article .card_content #check4:checked + .check-label .check-icon,
+main section article .card_content #check5:checked + .check-label .check-icon,
+main section article .card_content #check6:checked + .check-label .check-icon,
+main section article .card_content #check7:checked + .check-label .check-icon,
+main section article .card_content #check8:checked + .check-label .check-icon,
+main section article .card_content #check9:checked + .check-label .check-icon,
+main section article .card_content #check10:checked + .check-label .check-icon {
   margin-right: 0;
 }
 main section article .card_content-entrees {

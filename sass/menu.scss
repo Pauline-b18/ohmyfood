@@ -152,6 +152,14 @@ main {
                         font-weight: bold; 
                     }
 
+                    .check-input {
+                        display: none;
+                    }
+                    
+                    .check-label {
+                        cursor: pointer;
+                    }
+
                     .check-icon {
                         height: 100%;
                         display: flex;
@@ -161,13 +169,11 @@ main {
                         background-color: $light-green;
                         border-radius: 0 15px 15px 0px;
                         margin-right: -63px;
-                        transition: margin-right 0.3s; 
-
-                        i {
-                            color: white;
-                            font-size: 25px;
-                        }
+                        transition: margin-right 0.3s;
+                        color: white;
+                        font-size: 25px; 
                     }
+                    
                 }
 
                 .card_description {
@@ -198,6 +204,20 @@ main {
                 &:hover .check-icon {
                     margin-right: 0;
                 }
+
+                #check1:checked + .check-label .check-icon,
+                #check2:checked + .check-label .check-icon,
+                #check3:checked + .check-label .check-icon,
+                #check4:checked + .check-label .check-icon,
+                #check5:checked + .check-label .check-icon,
+                #check6:checked + .check-label .check-icon,
+                #check7:checked + .check-label .check-icon,
+                #check8:checked + .check-label .check-icon,
+                #check9:checked + .check-label .check-icon,
+                #check10:checked + .check-label .check-icon {
+                    margin-right: 0;
+                }
+                
                 
             }
 
