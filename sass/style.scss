@@ -67,19 +67,21 @@ body {
 
         .circle {
             width: 200px;
-            height: 200px; 
+            height: 200px;
             border-top: 4px solid $dark-green;
             border-radius: 50%;
             position: absolute;
-            animation: loading-circle-rotation 2s linear infinite;
-        }
+            animation: loading-circle-rotation 3s linear infinite;
+            -webkit-animation: loading-circle-rotation 3s linear infinite;
+}
 
         i {
-            font-size: 120px; 
+            font-size: 120px;
             color: $light-green;
             animation: icon 2s linear infinite;
             position: relative;
-        }
+            -webkit-animation: icon 2s linear infinite;
+}
 
     }
 } 

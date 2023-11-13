@@ -64,13 +64,15 @@ body {
   border-top: 4px solid #008766;
   border-radius: 50%;
   position: absolute;
-  animation: loading-circle-rotation 2s linear infinite;
+  animation: loading-circle-rotation 3s linear infinite;
+  -webkit-animation: loading-circle-rotation 3s linear infinite;
 }
 .loader .loader-icon i {
   font-size: 120px;
   color: #99E2D0;
   animation: icon 2s linear infinite;
   position: relative;
+  -webkit-animation: icon 2s linear infinite;
 }
 
 header {
