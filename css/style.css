@@ -1,5 +1,5 @@
 /*-----Animations--------*/
-@-webkit-keyframes loaderFadeOut {
+@keyframes loaderFadeOut {
   0% {
     opacity: 1;
     z-index: 9999;
@@ -18,7 +18,7 @@
     z-index: -9999;
   }
 }
-@-webkit-keyframes icon {
+@keyframes icon {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -26,7 +26,7 @@
     -webkit-transform: rotate(360deg);
   }
 }
-@-webkit-keyframes loading-circle-rotation {
+@keyframes loading-circle-rotation {
   to {
     -webkit-transform: rotate(-360deg);
   }
@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: loaderFadeOut 2s ease-in-out forwards;
+  animation: loaderFadeOut 2s ease-in-out forwards;
 }
 .loader .loader-icon {
   display: flex;
@@ -64,12 +64,12 @@ body {
   border-top: 4px solid #008766;
   border-radius: 50%;
   position: absolute;
-  -webkit-animation: loading-circle-rotation 2s linear infinite;
+  animation: loading-circle-rotation 2s linear infinite;
 }
 .loader .loader-icon i {
   font-size: 120px;
   color: #99E2D0;
-  -webkit-animation: icon 2s linear infinite;
+  animation: icon 2s linear infinite;
   position: relative;
 }
 
