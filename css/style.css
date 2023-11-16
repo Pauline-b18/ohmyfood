@@ -123,12 +123,14 @@ main .heading {
 main .heading h1 {
   width: 90%;
   margin: 40px auto 20px auto;
+  font-weight: 700;
 }
 main .heading p {
   width: 90%;
   margin: 0 auto 20px auto;
   color: #353535;
   font-size: 18px;
+  font-weight: 300;
 }
 main .heading button {
   font-size: 16px;
@@ -265,6 +267,10 @@ main .restaurants .container_card .card_content .card_txt {
 }
 main .restaurants .container_card .card_content .card_txt h3 {
   margin: 18px 0 -13px 0;
+  font-weight: 500;
+}
+main .restaurants .container_card .card_content .card_txt p {
+  font-weight: 300;
 }
 main .restaurants .container_card {
   position: relative;
@@ -324,6 +330,7 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 10px 0 0 0;
+  font-weight: 400;
 }
 footer a span i {
   width: 15px;

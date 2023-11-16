@@ -119,6 +119,7 @@ main section article h2 {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: -2px;
+  font-weight: 300;
 }
 main section article h2::after {
   content: "";
@@ -143,7 +144,7 @@ main section article .card_content .price-animation {
 main section article .card_content .price-animation > p {
   margin: auto 12px 11px 0px;
   height: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 main section article .card_content .price-animation .check-input {
   display: none;
@@ -181,10 +182,12 @@ main section article .card_content .card_description h3, main section article .c
 main section article .card_content .card_description h3 {
   padding: 2px 0px 4px 0;
   font-size: 18px;
+  font-weight: 500;
 }
 main section article .card_content .card_description p {
   width: auto;
   font-size: 15px;
+  font-weight: 300;
 }
 main section article .card_content:hover .check-icon {
   margin-right: 0;
@@ -251,6 +254,7 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 10px 0 0 0;
+  font-weight: 400;
 }
 footer a span i {
   width: 15px;
